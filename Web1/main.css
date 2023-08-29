@@ -1,0 +1,79 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.navigation {
+    border-radius: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  /* Change the link color to #111 (black) on hover */
+  li a:hover {
+    background-color: #111;
+  }
+
+
+.content {
+    position: relative;
+    justify-content: center;
+    max-width: 1000px;
+  margin: auto;
+  background: white;
+  padding: 30px;
+}
+
+.about {
+    padding: 15px;
+    color: white;
+    background: #58727e;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.sticky {
+    position: absolute;
+    right: 90px;
+    top: 285px;
+    width: 70px;
+    height: auto;
+    padding: 5px;
+    padding-bottom: 5px;
+    padding-top:    5px;
+}
+
+.shiba {
+    float: left;
+    width: 70px;
+    height: auto;
+    border-radius: 15px;
+    padding:5px;
+    
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #264452;
+    color: white;
+
+}

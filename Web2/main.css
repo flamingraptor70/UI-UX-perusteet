@@ -1,0 +1,136 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+.container {
+  margin: 0 10%;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  background-color: #040d12;
+  width: 100%;
+  height: 80px;
+  -webkit-box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.33);
+  box-shadow: 0px 0px 17px 4px rgba(0, 0, 0, 0.33);
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.nav-list {
+  padding: 20px;
+}
+
+.nav-item {
+  display: inline;
+  float: left;
+  font-size: 1.1em;
+  height: 100%;
+  margin: 0 20px;
+  text-align: center;
+}
+
+.nav-title {
+  font-size: 1.6em;
+  color: #5c8374;
+  height: 40px;
+}
+.nav-title:hover {
+  color: #93b1a6;
+}
+
+.nav-link {
+  color: white;
+  line-height: 40px;
+  transition-duration: 0.25s;
+}
+
+.nav-link:hover {
+  color: #93b1a6;
+  text-decoration: underline;
+}
+.nav-link:active {
+  color: #183d3d;
+  font-size: 1.11em;
+}
+
+article {
+  background-image: url("./images/bg.jpeg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  background-size: cover;
+  height: 300px;
+  border-radius: 20px;
+  padding: 50px;
+  -webkit-box-shadow: inset 0px 0px 56px -6px rgba(0, 0, 0, 0.68);
+  -moz-box-shadow: inset 0px 0px 56px -6px rgba(0, 0, 0, 0.68);
+  box-shadow: inset 0px 0px 56px -6px rgba(0, 0, 0, 0.68);
+}
+.burger-image {
+  height: 100%;
+  height: 100%;
+  border-radius: 20px;
+  float: left;
+  transition-duration: 1s;
+}
+.burger-image:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+aside {
+  float: left;
+  margin-left: 50px;
+  height: 100%;
+  width: 50%;
+  color: white;
+  font-size: 1.1em;
+}
+
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #5c8374;
+  position: fixed;
+  bottom: 0;
+}
+.footer-text {
+  color: white;
+  font-size: 1.2em;
+  text-align: center;
+  line-height: 100px;
+}
+
+.order-now-img {
+  position: absolute;
+  width: 125px;
+  top: 0;
+  right: 0;
+  transform: translate(40%, -40%);
+  transition-duration: 0.5s;
+  background-position: center;
+  background-size: cover;
+}
+.order-now-img:hover {
+  width: 150px;
+  cursor: pointer;
+}

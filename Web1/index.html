@@ -1,60 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web Sivu 1</title>
-    <link href="main.css" rel="stylesheet">
-</head>
-<body>
-    <div class="navigation">
-        <nav>    
-            <ul>
-                <li class="button"><a href="default.asp">Home</a></li>
-                <li class="button"><a href="news.asp">News</a></li>
-                <li class="button"><a href="contact.asp">Contact</a></li>
-                <li class="button"><a href="about.asp">About</a></li>
-            </ul>
-        </nav>
-    </div>
-<div class="content">
-    <h1>Heading 1</h1>
-    <section>
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores nemo ratione molestias! Vitae debitis doloribus cum quidem! Fugit quod eveniet possimus perspiciatis ab error quas, corrupti nobis necessitatibus quasi!</p>
-    </section> 
-    <section>
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores nemo ratione molestias! Vitae debitis doloribus cum quidem! Fugit quod eveniet possimus perspiciatis ab error quas, corrupti nobis necessitatibus quasi!</p>
-    </section> 
-    <section>
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores nemo ratione molestias! Vitae debitis doloribus cum quidem! Fugit quod eveniet possimus perspiciatis ab error quas, corrupti nobis necessitatibus quasi!</p>
-    </section> 
-    <section>
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores nemo ratione molestias! Vitae debitis doloribus cum quidem! Fugit quod eveniet possimus perspiciatis ab error quas, corrupti nobis necessitatibus quasi!</p>
-    </section> 
-    <section>
-        <h2>Heading 2</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla dolores nemo ratione molestias! Vitae debitis doloribus cum quidem! Fugit quod eveniet possimus perspiciatis ab error quas, corrupti nobis necessitatibus quasi!</p>
-    </section> 
-
-    <div class="about">
-        <div class="texting">
-            <img class="shiba" src="img/shiba.jpg" alt="shiba">
-                <img class="sticky" src="img/sticky.png" alt="sticky">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Sivu V1</title>
+    <link href="main.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ff00a6193a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dialogi-esim.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <ul class="navbar">
+        <li class="navbutton">
+          <a href="#" class="navlink"><h2 class="navlogo">Shibator</h2></a>
+        </li>
+        <li class="navbutton"><a href="#" class="navlink">Home</a></li>
+        <li class="navbutton"><a href="#" class="navlink">Menu</a></li>
+        <li class="navbutton"><a href="#" class="navlink">Contacts</a></li>
+      </ul>
+    </nav>
+    <div class="container">
+      <main>
+        <button id="open_dialog">Open Dialog</button>
+        <section>
+          <dialog>
+            <img
+              src="https://native-dialog.surge.sh/location-service.svg"
+              alt="Illustration of Location Services"
+            />
+            <h2 id="dialog_title" class="h2">Use location services?</h2>
+            <p id="dialog_description">
+              In order to give directional instructions, we kindly ask you to
+              turn on the location services.
+            </p>
+            <div class="flex flex-space-between">
+              <button id="close_dialog">Close</button>
+              <button id="confirm_dialog" class="cta">Confirm</button>
+            </div>
+          </dialog>
+        </section>
+        <p style="margin: 150px 0px">Later content on</p>
+        <article>
+          <img class="shiba" src="img/shiba.jpg" alt="shiba" />
+          <aside>
             <h1>About Us</h1>
             <p>
-                ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore impedit iusto? Amet dolor, asperiores exercitationem temporibus blanditiis veritatis explicabo repellendus. Sapiente temporibus culpa et blanditiis nisi nihil possimus inventore?</p>
-        </div>
+              ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore
+              impedit iusto? Amet dolor, asperiores exercitationem temporibus
+              blanditiis veritatis explicabo repellendus. Sapiente temporibus
+              culpa et blanditiis nisi nihil possimus inventore?
+            </p>
+          </aside>
+          <img class="sticky" src="img/sticky.png" alt="sticky" />
+        </article>
+      </main>
     </div>
-</div>
-
     <footer>
-        <small>
-            Footer text
-        </small>
+      <p class="footer-txt">Footer text</p>
     </footer>
-</body>
+  </body>
 </html>

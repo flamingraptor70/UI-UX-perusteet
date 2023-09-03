@@ -28,17 +28,28 @@
         <section>
           <dialog>
             <img
-              src="https://native-dialog.surge.sh/location-service.svg"
-              alt="Illustration of Location Services"
+              src="https://static.vecteezy.com/system/resources/previews/010/792/593/original/cute-shiba-inu-dog-cartoon-element-png.png"
+              alt="Illustration of dog"
             />
-            <h2 id="dialog_title" class="h2">Use location services?</h2>
+            <h2 id="dialog_title" class="h2">Rekisteröidy tiedoillasi</h2>
             <p id="dialog_description">
-              In order to give directional instructions, we kindly ask you to
-              turn on the location services.
+              <div>
+                <form action="/action_page.php">
+                  <label for="fname">Sukunimi, minimi 3 kirjainta:</label>
+                  <input type="text" id="fname" name="firstname" placeholder="Sukunimi">
+              
+                  <label for="lname">Email osoite (@metropolia.fi):</label>
+                  <input type="text" id="lname" name="lastname" placeholder="khaic@metropolia.fi">
+
+                  <label for="lname">Salasana</label>
+                  <input type="text" id="pass" name="password" placeholder="password">              
+                  
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
             </p>
             <div class="flex flex-space-between">
               <button id="close_dialog">Close</button>
-              <button id="confirm_dialog" class="cta">Confirm</button>
             </div>
           </dialog>
         </section>

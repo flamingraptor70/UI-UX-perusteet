@@ -13,7 +13,6 @@ body {
 .container {
   margin: 0 15%;
   width: 70%;
-  position: center;
 }
 
 nav {
@@ -50,7 +49,6 @@ ul {
 
 .navlogo {
   font-size: 1.7em;
-  text-shadow: black;
   color: orange;
 }
 
@@ -72,7 +70,6 @@ article {
 .shiba {
   height: 100%;
   float: left;
-  size: 40%;
   border-radius: 20px;
   transition-duration: 1s;
 }
@@ -132,8 +129,7 @@ button {
   width: calc(44px * var(--ratio));
   height: 44px;
   border-radius: calc(3px * var(--ratio));
-  border: none;
-  letter-spacing: ccalc(3 * var(--leading, 0.025em));
+  letter-spacing: calc(3 * var(--leading, 0.025em));
   font-family: inherit;
   color: var(--grey-color);
   background-color: var(--light-color-bg);

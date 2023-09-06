@@ -26,27 +26,45 @@
       <main>
         <button id="open_dialog">Open Dialog</button>
         <section>
-          <dialog>
+          <dialog open>
             <img
               src="https://static.vecteezy.com/system/resources/previews/010/792/593/original/cute-shiba-inu-dog-cartoon-element-png.png"
               alt="Illustration of dog"
             />
             <h2 id="dialog_title" class="h2">Rekisteröidy tiedoillasi</h2>
-            <p id="dialog_description">
-              <div>
-                <form action="/action_page.php">
-                  <label for="fname">Sukunimi, minimi 3 kirjainta:</label>
-                  <input type="text" id="fname" name="firstname" placeholder="Sukunimi">
-              
-                  <label for="lname">Email osoite (@metropolia.fi):</label>
-                  <input type="text" id="lname" name="lastname" placeholder="khaic@metropolia.fi">
+            <p id="dialog_description"></p>
+            <div>
+              <form action="/action_page.php">
+                <label for="fname">Sukunimi, minimi 3 kirjainta:</label>
+                <input
+                  type="text"
+                  id="fname"
+                  name="firstname"
+                  placeholder="Sukunimi"
+                />
 
-                  <label for="lname">Salasana</label>
-                  <input type="text" id="pass" name="password" placeholder="password">              
-                  
-                  <input type="submit" value="Submit">
-                </form>
-              </div>
+                <label for="lname">Koulun osoite (@metropolia.fi):</label>
+                <input
+                  type="text"
+                  id="lname"
+                  name="lastname"
+                  pattern=".+metropolia.fi"
+                  placeholder="khaic@metropolia.fi"
+                />
+
+                <label for="lname">Salasana</label>
+                <input
+                  type="text"
+                  name="password"
+                  id="pass"
+                  placeholder="Salasana tähän"
+                  pattern="/^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/"
+                  required =
+                />
+
+                <input type="submit" value="Submit" />
+              </form>
+            </div>
             <div class="flex flex-space-between">
               <button id="close_dialog">Close</button>
             </div>

@@ -42,12 +42,17 @@ ul {
 
 .navbutton {
   color: white;
+  transition: transform .2s;
   display: block;
   float: left;
   font-size: 1.5em;
   height: 100%;
   margin: 0 20px;
   text-align: center;
+}
+
+.navbutton:hover {
+  transform: scale(1.25);
 }
 
 .navlogo {
@@ -57,6 +62,39 @@ ul {
 
 .navlink {
   color: #c2c1a9;
+}
+
+.search-box {
+  float: right;
+}
+
+.search-box button {
+  height: 40px;
+  width: 40px;
+  background: lightgrey;
+  font-size: 17px;
+  border: none;
+  margin-left: 210px;
+  margin-top: -58px;
+}
+
+.search-box input[type=text] {
+  height: 40px;
+  background: lightgrey;
+  font-size: 17px;
+  width: 250px;
+  border: none;
+  margin-top: 5px;
+  margin-right: 70px;
+}
+
+.space-pic img {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0.5);
 }
 
 article {
@@ -141,6 +179,8 @@ button.cta:focus {
 
 #open_dialog {
   margin: auto;
+  background: lightgrey;
+  border: none; 
 }
 
 dialog {
@@ -191,6 +231,18 @@ select {
   font-weight: lighter;
 }
 
+input[type="password"],
+select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border-radius: calc(3px * var(--ratio));
+  box-sizing: border-box;
+  font-size: small;
+  font-weight: lighter;
+} 
+
 input[type="submit"] {
   width: 100%;
   background-color: #1b1c2f;
@@ -225,14 +277,6 @@ footer {
   line-height: 100px;
 }
 
-.space-pic img {
-  width: 100%;
-  position: sticky;
-  top: 0;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0.5);
-}
 
 @media only screen and (min-width: 650px) {
 }

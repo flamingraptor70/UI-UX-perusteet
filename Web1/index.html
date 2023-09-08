@@ -21,10 +21,22 @@
           <li class="navbutton"><a href="#" class="navlink">Home</a></li>
           <li class="navbutton"><a href="#" class="navlink">Menu</a></li>
           <li class="navbutton"><a href="#" class="navlink">Contacts</a></li>
+          <div class="search-box">
+            <form action="search.php" method="get">
+              <input
+                type="text"
+                name="search"
+                maxlength="60"
+                placeholder="Search..."
+                required
+              />
+              <button type="submit"><i class="fa fa-search"></i></button>
+            </form>
+          </div>
         </ul>
       </nav>
       <div class="space-pic">
-        <img src="/Web1/img/peakpx.jpg" alt="picture under nav" width="100">
+        <img src="/Web1/img/peakpx.jpg" alt="picture under nav" width="100" />
       </div>
       <main>
         <section>
@@ -60,15 +72,16 @@
 
                 <label for="lname">Salasana</label>
                 <input
-                  type="text"
+                  type="password"
                   name="password"
-                  id="pass"
+                  id="password"
                   placeholder="Salasana tähän"
                   pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                   minlength="8"
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required
                   required
                 />
-                
+
                 <input type="submit" value="Submit" />
               </form>
             </div>
@@ -77,9 +90,7 @@
             </div>
           </dialog>
         </section>
-        <div class="">
-          
-        </div>
+        <div class=""></div>
         <p style="margin: 150px 0px">Later content on</p>
         <article>
           <img class="shiba" src="img/shiba.jpg" alt="shiba" />

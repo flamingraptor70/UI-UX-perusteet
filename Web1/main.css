@@ -8,27 +8,27 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: #2B2F45;
+  color: #c2c1a9; 
 }
 
 .container {
-  background-color: rgb(239, 239, 239);
   margin: 0 15%;
   width: 70%;
+  margin-bottom: 20px;
 }
 
 nav {
-  background-color: #0d4f9d;
-  width: 70%;
+  background-color: #1b1c2f;
+  width: 100%;
   height: 90px;
   margin: auto;
-  position: fixed;
-  margin: auto;
+  position: sticky;
   top: 0;
-  border-bottom-left-radius: 30px;
-  border-bottom-right-radius: 30px;
-  box-shadow: 0 2px 4px 0 rgba(0,0,0,.2);
+  z-index: 1;
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
 }
-  
+
 ul {
   width: 100%;
   height: 100%;
@@ -52,29 +52,29 @@ ul {
 
 .navlogo {
   font-size: 1.7em;
-  color: orange;
+  color: #c2c1a9;
 }
 
 .navlink {
-  color: orange;
+  color: #c2c1a9;
 }
 
 article {
-  background-image: url(./img/aboutusbackground.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+  color:#c2c1a9;
+  background-color: #1b1c2f;
+  opacity: 0.8;
   position: relative;
   height: 300px;
-  border-radius: 20px;
+  border-radius: 30px;
   padding: 50px;
   margin-top: 100px;
+  box-shadow: 0 0px 6px 0 rgba(255, 255, 255, 0.5);
 }
 
 .shiba {
   height: 100%;
   float: left;
-  border-radius: 20px;
+  border-radius: 30px;
   transition-duration: 1s;
 }
 
@@ -88,7 +88,7 @@ aside {
   margin-left: 50px;
   height: 100%;
   width: 50%;
-  color: white;
+  color: c2c1a9;
   font-size: 1.3em;
 }
 
@@ -100,27 +100,9 @@ aside {
   transform: translate(-5%, -60%);
 }
 
-footer {
-  width: 100%;
-  height: 100px;
-  position: fixed;
-  bottom: 0;
-  margin-top: auto;
-  background-color: #0d4f9d;
-  /* position: fixed; Remove this line */
-  /* bottom: 0; Remove this line */
-}
-
-.footer-txt {
-  text-align: center;
-  color: lightgray;
-  text-align: center;
-  line-height: 100px;
-}
-
 :root {
   --ratio: 3.74;
-  --cta-color: #0d4f9d;
+  --cta-color: #1b1c2f;
   --light-color-bg: rgb(238, 241, 247);
   --dark-color-bg: rgb(55, 65, 81);
   --grey-color: rgb(107, 114, 128);
@@ -129,7 +111,8 @@ footer {
 
 button {
   display: block;
-  margin-top: 2rem;
+  position: relative;
+  top: 10px;
   width: calc(44px * var(--ratio));
   height: 44px;
   border-radius: calc(3px * var(--ratio));
@@ -149,7 +132,7 @@ button:focus {
 
 button.cta {
   background-color: var(--cta-color);
-  color: white;
+  color: #c2c1a9;
 }
 
 button.cta:focus {
@@ -157,7 +140,7 @@ button.cta:focus {
 }
 
 #open_dialog {
-  margin: 0 auto;
+  margin: auto;
 }
 
 dialog {
@@ -166,9 +149,7 @@ dialog {
   box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
   padding: 1.6rem;
   max-width: 400px;
-  z-index: 1000;
-  top: 3%;
-  left: 40%;
+  margin: auto;
 }
 
 dialog img {
@@ -191,7 +172,11 @@ dialog::backdrop {
 }
 
 .flex button {
-  margin: 8px auto;
+  margin: 10px auto;
+}
+
+#close_dialog {
+  top: 10px;
 }
 
 input[type="text"],
@@ -208,7 +193,7 @@ select {
 
 input[type="submit"] {
   width: 100%;
-  background-color: #0d4f9d;
+  background-color: #1b1c2f;
   color: white;
   padding: 14px 20px;
   margin: 8px 0;
@@ -220,16 +205,37 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #0a448b;
+  background-color: #37384b;
 }
 
-
-@media only screen and (min-width: 650px){
-  
-  
+footer {
+  width: 100%;
+  height: 100px;
+  bottom: 0;
+  background-color: #1b1c2f;
+  margin-top: auto;
+  /* position: fixed; Remove this line */
+  /* bottom: 0; Remove this line */
 }
 
-@media only screen and (min-width: 650px){
-  
-  
+.footer-txt {
+  text-align: center;
+  color: lightgray;
+  text-align: center;
+  line-height: 100px;
+}
+
+.space-pic img {
+  width: 100%;
+  position: sticky;
+  top: 0;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+  box-shadow: 0 2px 6px 0 rgba(255, 255, 255, 0.5);
+}
+
+@media only screen and (min-width: 650px) {
+}
+
+@media only screen and (min-width: 650px) {
 }

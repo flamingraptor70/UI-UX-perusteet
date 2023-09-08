@@ -23,10 +23,13 @@
           <li class="navbutton"><a href="#" class="navlink">Contacts</a></li>
         </ul>
       </nav>
+      <div class="space-pic">
+        <img src="/Web1/img/peakpx.jpg" alt="picture under nav" width="100">
+      </div>
       <main>
-        <button id="open_dialog">Open Dialog</button>
         <section>
-          <dialog open>
+          <button id="open_dialog">Open Dialog</button>
+          <dialog>
             <img
               src="https://static.vecteezy.com/system/resources/previews/010/792/593/original/cute-shiba-inu-dog-cartoon-element-png.png"
               alt="Illustration of dog"
@@ -41,6 +44,8 @@
                   name="firstname"
                   id="fname"
                   placeholder="Sukunimi"
+                  minlength="3"
+                  required
                 />
 
                 <label for="lname">Koulun osoite (@metropolia.fi):</label>
@@ -48,8 +53,9 @@
                   type="text"
                   name="lastname"
                   id="lname"
-                  pattern=".+metropolia.fi"
+                  pattern=".+@metropolia\.fi"
                   placeholder="khaic@metropolia.fi"
+                  required
                 />
 
                 <label for="lname">Salasana</label>
@@ -58,10 +64,11 @@
                   name="password"
                   id="pass"
                   placeholder="Salasana tähän"
-                  pattern="/^(?=.*\d)(?=.*[a-zA-Z]).{8,}$/"
-                  required =
+                  pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                  minlength="8"
+                  required
                 />
-
+                
                 <input type="submit" value="Submit" />
               </form>
             </div>
@@ -70,6 +77,9 @@
             </div>
           </dialog>
         </section>
+        <div class="">
+          
+        </div>
         <p style="margin: 150px 0px">Later content on</p>
         <article>
           <img class="shiba" src="img/shiba.jpg" alt="shiba" />

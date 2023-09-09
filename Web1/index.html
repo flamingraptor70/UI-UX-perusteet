@@ -14,13 +14,19 @@
   <body>
     <div class="container">
       <nav>
-        <ul class="navbar">
+        <ul>
           <li class="navbutton">
             <a href="#" class="navlink"><h2 class="navlogo">Shibator</h2></a>
           </li>
-          <li class="navbutton"><a href="#" class="navlink">Home</a></li>
-          <li class="navbutton"><a href="#" class="navlink">Menu</a></li>
-          <li class="navbutton"><a href="#" class="navlink">Contacts</a></li>
+          <li class="navbutton">
+            <a href="#" class="navlink"><h3 class="navbut">Home</h3></a>
+          </li>
+          <li class="navbutton">
+            <a href="#" class="navlink"><h3 class="navbut">Home</h3></a>
+          </li>
+          <li class="navbutton">
+            <a href="#" class="navlink"><h3 class="navbut">Home</h3></a>
+          </li>
           <div class="search-box">
             <form action="search.php" method="get">
               <input
@@ -78,7 +84,8 @@
                   placeholder="Salasana tähän"
                   pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
                   minlength="8"
-                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required
+                  title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                  required
                   required
                 />
 
@@ -93,6 +100,7 @@
         <div class=""></div>
         <p style="margin: 150px 0px">Later content on</p>
         <article>
+          <img class="sticky" src="img/sticky.png" alt="sticky" />
           <img class="shiba" src="img/shiba.jpg" alt="shiba" />
           <aside>
             <h2>About Us</h2>
@@ -103,7 +111,6 @@
               culpa et blanditiis nisi nihil possimus inventore?
             </p>
           </aside>
-          <img class="sticky" src="img/sticky.png" alt="sticky" />
         </article>
       </main>
     </div>

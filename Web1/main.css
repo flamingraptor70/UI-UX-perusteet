@@ -1,7 +1,5 @@
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -30,12 +28,10 @@ nav {
   overflow: auto;
 }
 
-
 .navbutton {
   color: white;
   transition: transform 0.2s;
   display: block;
-  float: left;
   font-size: 1.5em;
   height: 100%;
   margin: 0 px;
@@ -43,20 +39,23 @@ nav {
 }
 
 .navbutton:hover {
-  transform: scale(1.25);
+  transform: scale(1.05);
 }
 
 .navlogo {
-  font-size: 1.7em;
+  font-size: 2.0em;
   color: #c2c1a9;
-  padding-top: 20px;
-  padding-left: 30px; 
+  float: left;
+  margin: auto;
+  padding-right: 50px;
 }
 
 .navbut {
   color: #c2c1a9;
-  padding: 5px;
-  padding-top: 30px;
+  margin: auto;
+  padding: 15px;
+  padding-left: 10px;
+  float: left;
 }
 
 .search-box {
@@ -101,11 +100,34 @@ nav {
     overflow: hidden;
   }
 
-  .navbar a {
-    float: none;
+  nav {
+    height: 300px;
     display: block;
+    margin: auto;
+  }
+
+  .navlogo {
+    float: middle;
+  }
+
+  .navbut {
+    float: middle;
+  }
+
+
+  .navbutton{
+    margin: auto;
+    top: 4000px;
+    float: middle; 
+  }
+
+  .se
+
+  article aside {
+    padding-bottom: 20px;
   }
   
+
 }
 
 article {
@@ -119,17 +141,11 @@ article {
   box-shadow: 0 0px 6px 0 rgba(255, 255, 255, 0.5);
 }
 
+
 .shiba {
   height: 100%;
   float: left;
   border-radius: 30px;
-  transition-duration: 1s;
-  overflow: hidden;
-}
-
-.shiba:hover {
-  transform: scale(1.1);
-  cursor: pointer;
 }
 
 aside {
@@ -137,9 +153,7 @@ aside {
   margin-left: 50px;
   height: 100%;
   width: 50%;
-  color: c2c1a9;
   font-size: 1.3em;
-  overflow: hidden;
 }
 
 .sticky {
@@ -150,7 +164,6 @@ aside {
   transform: translate(-20px, -50px);
 }
 
-/* Media for text */
 
 :root {
   --ratio: 3.74;
@@ -285,14 +298,7 @@ footer {
 }
 
 .footer-txt {
-  text-align: center;
   color: lightgray;
   text-align: center;
   line-height: 100px;
-}
-
-@media only screen and (min-width: 650px) {
-}
-
-@media only screen and (min-width: 650px) {
 }

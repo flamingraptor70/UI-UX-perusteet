@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="main.css" rel="stylesheet" />
+    <script
+      src="https://kit.fontawesome.com/ff00a6193a.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/dialogi-esim.js" defer></script>
+    <title>WebSivu Updated</title>
+  </head>
+  <body>
+    <header> 
+          <nav>
+              <div class="navlogo">
+                <a href="#" class="navtitle-parent">
+                    <h2 class="navtitle">Shibator</h2>
+                </a>
+            </div>
+            <div class="navbuttons">
+                <a href="#" class="navlink">Main</a>
+                <a href="#" class="navlink">Catalog</a>
+                <a href="#" class="navlink">Contacts</a>
+                <a href="#" class="navdialog" id="open_dialog">Open dialog</a>
+            </div>
+      </header>
+    <main>
+        <section class="undernav-picture"></section>
+        <section class="dialog-modal">
+            <button id="open_dialog">Open Dialog</button>
+            <dialog id="open_dialog">
+                  <img
+                    src="https://static.vecteezy.com/system/resources/previews/010/792/593/original/cute-shiba-inu-dog-cartoon-element-png.png"
+                    alt="Illustration of dog"
+                  />
+                  <form action="/action_page.php">
+                    <label for="username">Sukunimi, minimi 3 kirjainta:</label>
+                    <input
+                      type="text"
+                      name="firstname"
+                      id="fname"
+                      placeholder="Sukunimi"
+                      minlength="3"
+                      required
+                    />
+            
+                    <label for="email">Koulun osoite (@metropolia.fi):</label>
+                    <input
+                      type="text"
+                      name="lastname"
+                      id="lname"
+                      pattern=".+@metropolia\.fi"
+                      placeholder="khaic@metropolia.fi"
+                      required
+                    />
+            
+                    <label for="password">Salasana</label>
+                    <input
+                      type="password"
+                      name="password"
+                      id="password"
+                      placeholder="Salasana tähän"
+                      pattern="^(?!.*[\s])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$"
+                      minlength="8"
+                      title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters"
+                      required
+                    />
+                    <input type="submit" value="Submit" />
+                  </form>
+                  <div class="flex flex-space-between">
+                    <button id="close_dialog">Close</button>
+                  </div>
+            </dialog>
+          </section>
+          <section class="content-text">
+            <p style="margin: 100px 0px;">Later text!</p>
+          </section>
+        <section class="about-us">
+            <article>
+                <div class="article-img-parent">
+                  <img class="sticky-img" src="img/sticky.png" alt="sticky shiba image">
+                </div>
+                <aside>
+                    <div class="aside-container">
+                        <h2>Text</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur perferendis dolores sunt, nesciunt exercitationem facilis ullam vitae nam alias unde, expedita voluptate! Tenetur quasi, rem tempora eaque voluptatem repellendus nostrum?</p>
+                    </div>
+                </aside>
+            </article>
+          </section>
+    </main>
+    <footer>
+        <p class="footer-text">Footer Text</p>
+      </footer>
+  </body>
+</html>

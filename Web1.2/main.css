@@ -247,7 +247,7 @@ footer {
     font-size: small;
     font-weight: lighter;
     border: 2px solid black;
-    border-left: 5px solid green;
+    border-left: 7px solid green;
   }
   
   input[type="password"],
@@ -261,7 +261,7 @@ footer {
     font-size: small;
     font-weight: lighter;
     border: 2px solid black;
-    border-left: 5px solid green;
+    border-left: 7px solid green;
   }
   
   input[type="submit"] {

@@ -1,5 +1,4 @@
 /* Overall */
-
 :root {
     --ratio: 3.74;
     --cta-color: #1b1c2f;
@@ -44,17 +43,55 @@ header {
 nav {
   background-color: #bcbdd8;
   width: 100%;
-  height: 100px;
+  height: 120px;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+a {
+  text-decoration: none;
+  color: #581c87;
+}
+
+a:hover {
+  color: white;
+}
+
+.navdialog {
+  display: flex !important;
+  text-align: right;
+  align-items: right;
+  justify-content: flex-end;
+  margin-bottom: 0;
+  padding-right: 20px;
 }
 
 .navtitle {
+  color: #581c87;
+  font-size: 1.8em;
   margin-left: 15px;
+  margin-top: 15px;
+  transition-delay: 0ms;
+}
+
+.navtitle:hover {
 }
 
 .navbuttons {
+  display: flex !important;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 30px;
   margin-top: 10px;
-  text-align: center;
 }
+
+.navlink {
+  text-align: center;
+  text-decoration: underline;
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
 
 /* Main section */
 section {
@@ -64,16 +101,19 @@ section {
 
 .undernav-picture {
   width: 100%;
-  height: 200px;
+  height: 400px;
   background-image: url("./img/grid.jpg");
   background-size: cover;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
 }
 
 article {
   background-color: #bdbdd7;
   border-radius: 20px;
+  position: relative;
+  padding:3rem ;
 }
 
 aside {
@@ -81,7 +121,7 @@ aside {
   height: 50%;
   width: 100%;
   color: #581c87;
-  font-size: 1.3em;
+  font-size: 1.2em;
 }
 
 .aside-container {
@@ -90,28 +130,12 @@ aside {
   margin-top: 1rem;
 }
 
-.article-img-parent {
-  display: block;
-  height: 100%;
-  width: 100%;
-  max-width: 300px;
-  margin: auto;
-  border-radius: 20px;
-  transition-duration: 1s;
-  background-image: url(./img/shiba.jpg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: #6b9484;
-  display: block;
-}
-
 .sticky-img {
     position: absolute;
     width: 150px;
-    top: 0;
-    right: 0;
-    transform: translate(-20px, -50px);
+    top:0;
+    right:0; 
+    transform: translate(-10px, -60px);
 }
 
 /* Footer */
@@ -119,6 +143,8 @@ footer {
   width: 100%;
   height: 100px;
   bottom: 0;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-top: 20px;
 }
 
 .footer-text {
@@ -241,8 +267,8 @@ footer {
     background-color: #37384b;
   }
 
-/* Responsive sizes */
 
+/* Responsive sizes */
 @media only screen and (min-width: 1100px) {
   header {
     margin: auto;
@@ -256,4 +282,6 @@ footer {
     width: 80%;
     margin: auto;
   }
+
+
 }

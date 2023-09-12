@@ -242,7 +242,7 @@ footer {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border-radius: calc(3px * var(--ratio));
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: small;
     font-weight: lighter;
@@ -256,7 +256,7 @@ footer {
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
-    border-radius: calc(3px * var(--ratio));
+    border-radius: 10px;
     box-sizing: border-box;
     font-size: small;
     font-weight: lighter;
@@ -271,7 +271,7 @@ footer {
     padding: 14px 20px;
     margin: 8px 0;
     border: 2px;
-    border-radius: calc(3px * var(--ratio));
+    border-radius: 10px;
     cursor: pointer;
     font-size: large;
     font-weight: 700;

@@ -107,7 +107,48 @@ section {
   box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.5);
 }
 
-/* Button flexbox section */
+/* Grid container section */
+.grid-container{
+  display: grid;
+  background-color: gray;
+  border-radius: 20px;
+  grid-template-columns: repeat(2, 190px);
+  grid-template-rows: auto;
+  grid-gap: 20px;
+  min-height: 300px;
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+.grid-item {
+  border-radius: 20px;
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+}
+
+.grid-item-1 {
+  grid-area: Header;
+  background-color: red;
+  
+}
+
+.grid-item-2 {
+  grid-area: Description;
+  background-color: blue;
+}
+
+.grid-item-3 {
+  grid-area: Locations ;
+  background-color: green;
+}
+
+.grid-item-4 {
+  grid-area: CoRights;
+  background-color: orange;
+}
+
+/* Button flexbox container section */
 .flexbox-button-container{
   display: flex;
   border-radius: 20px;
@@ -118,7 +159,7 @@ section {
 }
 
 
-/* Picture flexbox section */
+/* Picture flexbox container section */
 .flexbox-container {
   display: flex;
   justify-content: space-between;
@@ -140,7 +181,6 @@ section {
   }
 
 }
-
 
 .flexbox-item-1 {
   background-image: url(img.flex/flex1.JPG);
@@ -171,13 +211,9 @@ section {
   }
 }
 
-
-.content-text {
-
-}
-
 article {
   background-color: #bdbdd7;
+  margin-top: 20px;
   border-radius: 20px;
   position: relative;
   padding:3rem ;
@@ -387,11 +423,6 @@ footer {
 @media only screen and (max-width: 750px) {
   .flexbox-container {
     display: flex ;
-    align-items: flex-start;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    align-items: space-between;
-
+    flex-direction: column;
   }
 }

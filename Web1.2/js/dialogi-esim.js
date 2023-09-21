@@ -1,7 +1,8 @@
-'use strict'
+'use strict';
 
 const dialog = document.querySelector("dialog");
-const openDialogBtn = document.getElementById("open_dialog");
+const openDialogBtn = document.querySelector(".open_dialog");
+const openDialogBtn2 = document.querySelector(".open_dialog2");
 const closeDialogBtn = document.getElementById("close_dialog");
 
 const elements = dialog.querySelectorAll(
@@ -30,6 +31,7 @@ const trapFocus = (e) => {
 const openDialog = () => {
   dialog.showModal();
   dialog.addEventListener("keydown", trapFocus);
+  console.log("test")
 };
 
 const closeDialog = (e) => {
@@ -40,6 +42,9 @@ const closeDialog = (e) => {
 };
 
 openDialogBtn.addEventListener("click", openDialog);
+closeDialogBtn.addEventListener("click", closeDialog);
+
+openDialogBtn2.addEventListener("click", openDialog);
 closeDialogBtn.addEventListener("click", closeDialog);
 
 if (typeof dialog.showModal !== "function") {

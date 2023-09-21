@@ -160,12 +160,27 @@ section {
 .flexbox-button-container{
   display: flex;
   border-radius: 20px;
-  background-color: grey;
-  justify-content: space-between;
-  align-items: center;
-  height: 400px;  
+  justify-content: center;
+  height: 500px;
+  overflow: hidden;
+  border: 1px solid black;
 }
 
+.flex-button {
+  padding: 20px;
+  width: auto;
+  text-align: center;
+}
+
+.flexbutton-item-1{
+  background-image: url(img/ducks.JPG);
+  background-size: cover;
+}
+
+.flexbutton-item-2{
+  border-radius: 1px;
+  background-color: white;
+}
 
 /* Picture flexbox container section */
 .flexbox-container {
@@ -279,7 +294,6 @@ footer {
 
 /* Modal */
   button {
-    display: block;
     position: relative;
     top: 10px;
     width: calc(44px * var(--ratio));

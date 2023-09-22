@@ -4,12 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="main.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="./img/shibatzu-logo.png">
     <script
       src="https://kit.fontawesome.com/ff00a6193a.js"
       crossorigin="anonymous"
     ></script>
     <script src="js/dialogi-esim.js" defer></script>
-    <title>WebSivu Updated</title>
+    <title>Shibatzu</title>
   </head>
   <body>
     <!--Header / Navigation section-->
@@ -18,7 +19,7 @@
         <a href="#" class="navdialog open_dialog">Log in</a>
         <div class="navlogo">
           <a href="#" class="navtitle-parent">
-            <h2 class="navtitle">Shibator</h2>
+            <h2 class="navtitle">Shibatzu</h2>
           </a>
         </div>
         <div class="navbuttons">
@@ -35,10 +36,10 @@
       <section>
         <dialog>
           <img
-            src="https://static.vecteezy.com/system/resources/previews/010/792/593/original/cute-shiba-inu-dog-cartoon-element-png.png"
+            src="./img/shibatzu-logo.png"
             alt="Illustration of dog"
           />
-          <h2 id="dialog_title" class="h2">Rekisteröidy tiedoillasi</h2>
+          <h2 id="dialog_title" class="h2" style="text-align: center; margin-bottom: 1rem;">Rekisteröidy tiedoillasi</h2>
           <p id="dialog_description"></p>
           <div>
             <form action="/action_page.php">
@@ -99,28 +100,71 @@
       <!--Flexbutton section-->
       <section>
         <div class="flexbox-button-container" style="margin-top: 20px">
-          <button class="flexnappi">S21</button>
-          <button class="flexnappi">W20</button>
-          <button class="flexnappi">S20</button>
-          <button class="flexnappi">W19</button>
+          <button class="flexnappi">FS21</button>
+          <button class="flexnappi">SW20</button>
+          <button class="flexnappi">SW20</button>
+          <button class="flexnappi">FW19</button>
         </div>
       </section>
       <!--Grid container section-->
       <section>
         <div class="grid-container">
           <div class="grid-item grid-item-1">
-            <img
-              src="https://images.unsplash.com/flagged/photo-1567934150921-7632371abb32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
-              alt="abstract_3"
-              style="max-width: 300px; max-height: 200px"
-            />
+            <div class="grid-1-picture">
+              <img
+                src="https://images.unsplash.com/flagged/photo-1567934150921-7632371abb32?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80"
+                alt="abstract_1"
+                style="
+                  max-width: 400px;
+                  max-height: 300px;
+                  margin: 1.1rem;
+                  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+                "
+              />
+            </div>
+            <div class="grid-1-description"></div>
+            <div class="grid-1-header" style="margin:1.1rem;">
+            <h1>Painting list</h1>
+            </div>
+            <div class="grid-1-button"></div>
           </div>
           <div class="grid-item grid-item-2">
-            Top Artists
-            <button class="open_dialog2">Log in</button>
+            <div class="grid-2-picture">
+              <img
+                src="https://images.unsplash.com/photo-1535385793343-27dff1413c5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2854&q=80"
+                alt="abstract_1"
+                style="
+                  max-width: 400px;
+                  max-height: 300px;
+                  margin: 1.1rem;
+                  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+                "
+              />
+            </div>
+            <div class="grid-2-description"></div>
+            <div class="grid-2-header" style="margin:1.1rem;">
+              <h1>Exibition list</h1>
+            </div>
+            <div class="grid-2-button">
+              <button class="open_dialog2">Log in</button>
+            </div>
           </div>
-          <div class="grid-item grid-item-3">Our location</div>
-          <div class="grid-item grid-item-4">Our sponsors</div>
+          <div class="grid-item grid-item-3">
+            <div class="grid-3-header" style="margin:1.1rem;">
+              <h1>Artist list</h1>
+            </div>
+            <div class="grid-3-description"></div>
+            <div class="grid-3-logo"></div>
+            <div class="grid-3-button"></div>
+          </div>
+          <div class="grid-item grid-item-4">
+            <div class="grid-4-header" style="margin:1.1rem;">
+              <h1>Sponsor list</h1>
+            </div>
+            <div class="grid-4-description"></div>
+            <div class="grid-4-logo"></div>
+            <div class="grid-4-button"></div>
+          </div>
         </div>
       </section>
       <!--Text content section-->

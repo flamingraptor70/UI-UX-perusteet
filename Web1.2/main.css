@@ -124,27 +124,40 @@ section {
 .grid-item-1 {
   display: grid;
   min-height: 300px;
-  grid-template-columns: repeat(3, 1fr);
-  
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .grid-item-2 {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 1fr;
   min-height: 300px;
 }
 
 .grid-item-3 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   display: grid;
   min-height: 150px;
 }
 
 .grid-item-4 {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   display: grid;
   min-height: 150px;
+}
+
+.grid-headers button {
+  text-align: center;
+  border: none;
+  margin-top: 5rem;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.grid-pictures img {
+  max-width: 400px;
+  max-height: 300px;
+  margin: 1.1rem;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 
 /* Button flexbox container section */
@@ -406,19 +419,16 @@ dialog input:invalid {
   .flexbox-container {
     margin-top: 20px;
   }
-  
 }
 
 @media only screen and (min-width: 750px) {
-  .grid-container{
+  .grid-container {
     grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
   }
 }
 
-
 /* Small size (below 750px)*/
 @media only screen and (max-width: 750px) {
-
   /* Responsive Flexbox*/
   .flexbox-container {
     display: flex;
@@ -449,25 +459,12 @@ dialog input:invalid {
     background-image: url(img.flex.webp/flex4-hov.webp);
   }
 
-  .grid-container {
+  .grid-item {
     grid-template-columns: 1fr;
   }
 
-  .grid-item-1 {
-    
-
-  }
-
-  .grid-item-2 {
-
-  }
-
-  .grid-item-3 {
-
-  }
-
-  .grid-item-4 {
+  .grid-pictures {
+    display: grid;
+    place-items: center;
   }
 }
-  
-

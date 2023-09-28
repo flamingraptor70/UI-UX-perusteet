@@ -10,11 +10,16 @@
   --dark-purple-color: #49176d;
 }
 
+@font-face {
+  font-family: "Montserrat";
+  src: url("./Montserrat_font/Montserrat-VariableFont_wght.ttf");
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "Montserrat", sans-serif;
 }
 
 body {

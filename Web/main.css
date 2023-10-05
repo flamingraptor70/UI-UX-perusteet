@@ -2,13 +2,13 @@
 :root {
   --clr-light: whitesmoke;
   --clr-dark: rgb(29, 29, 29);
-  --clr-blurple: #5865f2;
-  --ratio: 3.74;
+  --clr-dark-items: rgb(22, 22, 22);
   --cta-color: #1b1c2f;
-  --leading: 0.025em;
   --light-purple-color: #bcbdd8;
   --dark-purple-color: #49176d;
   --darker-purple-color: #27063b ;
+  --ratio: 3.74;
+  --leading: 0.025em;
 }
 
 @font-face {
@@ -348,12 +348,13 @@ button {
   width: calc(44px * var(--ratio));
   height: 44px;
   border-radius: calc(3px * var(--ratio));
-  letter-spacing: calc(3 * var(--leading, 0.025em));
+  letter-spacing: calc(2 * var(--leading, 0.025em));
   font-family: inherit;
   color: var(--dark-purple-color);
   background-color: var(--light-purple-color);
   font-size: large;
   font-weight: 700;
+  border: none;
 }
 
 button:focus {
@@ -376,6 +377,7 @@ button:hover {
 }
 
 dialog {
+  background-color: rgba(245, 245, 245, 0.9);
   border: none !important;
   border-radius: calc(5px * var(--ratio));
   box-shadow: 0 0 #0000, 0 0 #0000, 0 25px 50px -12px rgba(0, 0, 0, 0.25);
@@ -422,9 +424,9 @@ select {
   border-radius: 10px;
   box-sizing: border-box;
   font-size: small;
-  font-weight: lighter;
-  border: 2px solid black;
-  border-left: 7px solid green;
+  font-weight: light;
+  border: 1px solid black;
+  border-left: 5px solid green;
 }
 
 input[type="password"],
@@ -436,15 +438,16 @@ select {
   border-radius: 10px;
   box-sizing: border-box;
   font-size: small;
-  font-weight: lighter;
-  border: 2px solid black;
-  border-left: 7px solid green;
+  font-weight: light;
+  border: 1px solid black;
+  border-left: 5px solid green;
 }
 
 input[type="submit"] {
   width: 100%;
-  background-color: #1b1c2f;
-  color: white;
+  background-color: var(--light-purple-color);
+  letter-spacing: calc(2 * var(--leading, 0.025em));
+  color: var(--dark-purple-color);
   padding: 14px 20px;
   margin: 8px 0;
   border: 2px;
@@ -455,7 +458,10 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #37384b;
+  font-size: 1.5rem;
+  transition: 0.2s;
+  color: var(--light-purple-color);
+  background-color: var(--dark-purple-color);
 }
 
 dialog input:valid {
@@ -551,8 +557,8 @@ dialog input:invalid {
 
   /* Navigation section */
   nav {
-    background-color: var(--clr-dark);
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+    background-color: var(--clr-dark-items);
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
   }
 
   .navtitle {
@@ -580,10 +586,12 @@ dialog input:invalid {
   h3 {
     color: var(--light-purple-color);
   }
+
   
   /* Grid container section */
   .grid-item {
-    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+    background-color: var(--clr-dark);
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
   }
   
   /* Flexbox container */
@@ -593,7 +601,7 @@ dialog input:invalid {
   article {
     background-color: var(--clr-dark);
     color: var(--light-purple-color);
-    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
   }
 
   aside {
@@ -603,6 +611,25 @@ dialog input:invalid {
 
   /* Footer section */
   footer {
+    background-color: var(--clr-dark-items);
     box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+  }
+
+
+  /* Dialog section */ 
+  dialog {
+    background-color: rgba(29, 29, 29, 0.9);
+    box-shadow: 0 0 #ffffff, 0 0 #ffffff, 0 25px 50px 0px rgba(153, 151, 151, 0.267);
+    color: white;
+  }
+
+  input[type="text"]{
+    color:white;
+    background-color: rgb(50, 50, 50);
+  }
+
+  input[type="password"]{
+    color:white;
+    background-color: rgb(50, 50, 50);
   }
 }

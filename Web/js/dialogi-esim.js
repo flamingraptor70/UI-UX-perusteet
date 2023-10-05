@@ -48,19 +48,5 @@ openDialogBtn2.addEventListener("click", openDialog);
 closeDialogBtn.addEventListener("click", closeDialog);
 
 if (typeof dialog.showModal !== "function") {
-  /**
-   * How to add polyfill outside CodePen conditionally
-   * let polyfill = document.createElement("script");
-   * polyfill.type = "text/javascript";
-   * polyfill.src = "/dist/dialog-polyfill.js";
-   * document.body.append(polyfill);
-  
-   * const polyfillStyles = document.createElement("link");
-   * polyfillStyles.rel = "stylesheet";
-   * polyfillStyles.href = "dialog-polyfill.css";
-   * document.head.append(polyfillStyles);
-   **/
-
-  // Register polyfill on dialog element once the script has loaded
   dialogPolyfill.registerDialog(dialog);
 }

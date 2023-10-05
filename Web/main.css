@@ -1,13 +1,14 @@
 /* Overall */
 :root {
+  --clr-light: whitesmoke;
+  --clr-dark: rgb(29, 29, 29);
+  --clr-blurple: #5865f2;
   --ratio: 3.74;
   --cta-color: #1b1c2f;
-  --light-color-bg: rgb(238, 241, 247);
-  --dark-color-bg: rgb(55, 65, 81);
-  --grey-color: rgb(107, 114, 128);
   --leading: 0.025em;
   --light-purple-color: #bcbdd8;
   --dark-purple-color: #49176d;
+  --darker-purple-color: #27063b ;
 }
 
 @font-face {
@@ -23,7 +24,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background-color: var(--clr-white);
 }
 
 main {
@@ -36,8 +37,8 @@ h2 {
 }
 
 /* Navigation */
-
 header {
+  display: grid;
   margin: 0;
   width: 100%;
   top: 0;
@@ -48,10 +49,59 @@ header {
 }
 
 nav {
+  display: grid;
+  grid-template-areas:
+    "toggle toggle toggle log log log"
+    "header header header button button button";
+  padding: 10px;
+  gap: 20px;
   background-color: var(--light-purple-color);
   width: 100%;
-  height: 110px;
+  min-height: 100px;
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+}
+
+.checkbox {
+  grid-area: toggle;
+  display: flex;
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox-label {
+  background-color: var(--dark-purple-color);
+  width: 50px;
+  height: 26px;
+  border-radius: 50px;
+  position: relative;
+  padding: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.fa-moon {
+  color: #dfdddd;
+}
+
+.fa-sun {
+  color: #f5e611;
+}
+
+.checkbox-label .ball {
+  background-color: var(--light-purple-color);
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  left: 2px;
+  top: 2px;
+  border-radius: 50%;
+  transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+  transform: translateX(24px);
 }
 
 a {
@@ -63,11 +113,20 @@ a:hover {
   color: white;
 }
 
-.navdialog {
-  display: flex !important;
+.navtoggle {
+  padding-left: 10px;
+}
+.navlogo {
+  grid-area: header;
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+.navlogini {
+  grid-area: log;
   text-align: right;
-  align-items: right;
-  justify-content: flex-end;
+}
+.navdialog {
   margin-bottom: 0;
   padding-right: 20px;
 }
@@ -75,25 +134,19 @@ a:hover {
 .navtitle {
   color: var(--dark-purple-color);
   font-size: 2em;
-  margin-left: 30px;
-  margin-top: 10px;
   transition-delay: 5ms;
 }
 
 .navbuttons {
-  display: flex !important;
-  align-items: center;
-  justify-content: flex-end;
-  margin-right: 10px;
-  margin-top: 10px;
+  margin-top: auto;
+  grid-area: button;
+  text-align: right;
 }
 
 .navlink {
-  text-align: center;
   text-decoration: underline;
-  margin-right: 7px;
-  margin-left: 25px;
-  font-size: 1.5em;
+  margin-left: 2.2rem;
+  font-size: 1.8rem;
 }
 
 /* Main section */
@@ -228,10 +281,13 @@ section {
   }
 }
 
+
+/* Article section */
 article {
-  background-color: #bdbdd7;
+  background-color: var(--light-purple-color);
   margin-top: 20px;
   border-radius: 20px;
+  min-height: 300px;
   position: relative;
   padding: 3rem;
 }
@@ -240,7 +296,7 @@ aside {
   padding: 20px;
   height: 50%;
   width: 100%;
-  color: #581c87;
+  color: var(--dark-purple-color);
   font-size: 1.2em;
 }
 
@@ -253,9 +309,9 @@ aside {
 .shiba-img {
   float: left;
   width: 150px;
-  border-top-left-radius: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  border-radius: 20px;
+  padding-right: 10px;
+  padding-bottom: 10px;
 }
 
 .sticky-img {
@@ -477,5 +533,76 @@ dialog input:invalid {
   .grid-pictures {
     display: grid;
     place-items: center;
+  }
+
+  .navlogo {
+    font-size: 1rem;
+  }
+  .navlink {
+    font-size: 1.3rem;
+  }
+}
+
+/* Dark mode */
+.dark {
+  /* Overall section */
+  background-color: var(--clr-dark);
+  color: whitesmoke;
+
+  /* Navigation section */
+  nav {
+    background-color: var(--clr-dark);
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  .navtitle {
+    color: var(--light-purple-color);
+  }
+
+  a {
+    color: var(--light-purple-color);
+  }
+
+  .checkbox-label {
+    background-color: var(--light-purple-color);
+  }
+  .checkbox-label .ball {
+    background-color: var(--clr-dark);
+  }
+
+  /* Main section */
+  .undernav-picture {
+    background-image: url("https://images.unsplash.com/photo-1507643179773-3e975d7ac515?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    box-shadow: 0 3px 3px -2px rgba(255, 255, 255, 0.5);
+  }
+
+  /* Flexbutton */
+  h3 {
+    color: var(--light-purple-color);
+  }
+  
+  /* Grid container section */
+  .grid-item {
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+  }
+  
+  /* Flexbox container */
+
+
+  /* Article section */
+  article {
+    background-color: var(--clr-dark);
+    color: var(--light-purple-color);
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+  }
+
+  aside {
+    color: var(--light-purple-color);
+  }
+
+
+  /* Footer section */
+  footer {
+    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
   }
 }

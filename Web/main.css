@@ -558,7 +558,7 @@ dialog input:invalid {
   /* Navigation section */
   nav {
     background-color: var(--clr-dark-items);
-    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
   }
 
   .navtitle {
@@ -567,6 +567,10 @@ dialog input:invalid {
 
   a {
     color: var(--light-purple-color);
+  }
+
+  a:hover {
+    color: white;
   }
 
   .checkbox-label {
@@ -591,9 +595,11 @@ dialog input:invalid {
   /* Grid container section */
   .grid-item {
     background-color: var(--clr-dark);
-    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
   }
-  
+  .grid-pictures img {
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+  }
   /* Flexbox container */
 
 
@@ -601,7 +607,7 @@ dialog input:invalid {
   article {
     background-color: var(--clr-dark);
     color: var(--light-purple-color);
-    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
   }
 
   aside {
@@ -612,13 +618,13 @@ dialog input:invalid {
   /* Footer section */
   footer {
     background-color: var(--clr-dark-items);
-    box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
   }
 
 
   /* Dialog section */ 
   dialog {
-    background-color: rgba(29, 29, 29, 0.95);
+    background-color: rgba(29, 29, 29, 0.97);
     box-shadow: 0 0 #ffffff, 0 0 #ffffff, 0 25px 50px 0px rgba(153, 151, 151, 0.267);
     color: white;
   }

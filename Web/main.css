@@ -618,7 +618,7 @@ dialog input:invalid {
 
   /* Dialog section */ 
   dialog {
-    background-color: rgba(29, 29, 29, 0.9);
+    background-color: rgba(29, 29, 29, 0.95);
     box-shadow: 0 0 #ffffff, 0 0 #ffffff, 0 25px 50px 0px rgba(153, 151, 151, 0.267);
     color: white;
   }

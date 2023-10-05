@@ -550,92 +550,89 @@ dialog input:invalid {
 }
 
 /* Dark mode */
-.dark {
+body.dark {
   /* Overall section */
   background-color: var(--clr-dark);
   color: whitesmoke;
 
   /* Navigation section */
-  nav {
-    background-color: var(--clr-dark-items);
-    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
-  }
+}
 
-  .navtitle {
-    color: var(--light-purple-color);
-  }
+body.dark nav {
+  background-color: var(--clr-dark-items);
+  box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
+}
 
-  a {
-    color: var(--light-purple-color);
-  }
+body.dark .navtitle {
+  color: var(--light-purple-color);
+}
 
-  a:hover {
-    color: white;
-  }
+body.dark a {
+  color: var(--light-purple-color);
+}
 
-  .checkbox-label {
-    background-color: var(--light-purple-color);
-  }
-  .checkbox-label .ball {
-    background-color: var(--clr-dark);
-  }
+body.dark a:hover {
+  color: white;
+}
 
-  /* Main section */
-  .undernav-picture {
-    background-image: url("https://images.unsplash.com/photo-1507643179773-3e975d7ac515?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
-    box-shadow: 0 3px 3px -2px rgba(255, 255, 255, 0.5);
-  }
+body.dark .checkbox-label {
+  background-color: var(--light-purple-color);
+}
 
-  /* Flexbutton */
-  h3 {
-    color: var(--light-purple-color);
-  }
+body.dark .checkbox-label .ball {
+  background-color: var(--clr-dark);
+}
 
-  
-  /* Grid container section */
-  .grid-item {
-    background-color: var(--clr-dark);
-    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
-  }
-  .grid-pictures img {
-    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
-  }
-  /* Flexbox container */
+/* Main section */
+body.dark .undernav-picture {
+  background-image: url("https://images.unsplash.com/photo-1507643179773-3e975d7ac515?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+  box-shadow: 0 3px 3px -2px rgba(255, 255, 255, 0.5);
+}
 
+/* Flexbutton */
+body.dark h3 {
+  color: var(--light-purple-color);
+}
 
-  /* Article section */
-  article {
-    background-color: var(--clr-dark);
-    color: var(--light-purple-color);
-    box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
-  }
+/* Grid container section */
+body.dark .grid-item {
+  background-color: var(--clr-dark);
+  box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
+}
+body.dark .grid-pictures img {
+  box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.5);
+}
 
-  aside {
-    color: var(--light-purple-color);
-  }
+/* Article section */
+body.dark article {
+  background-color: var(--clr-dark);
+  color: var(--light-purple-color);
+  box-shadow: 0 0 2.5px 0 rgba(255, 255, 255, 0.5);
+}
 
+body.dark aside {
+  color: var(--light-purple-color);
+}
 
-  /* Footer section */
-  footer {
-    background-color: var(--clr-dark-items);
-    box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
-  }
+/* Footer section */
+body.dark footer {
+  background-color: var(--clr-dark-items);
+  box-shadow: 0 0 3px 0 rgba(255, 255, 255, 0.5);
+}
 
+/* Dialog section */ 
+body.dark dialog {
+  background-color: rgba(29, 29, 29, 0.97);
+  box-shadow: 0 0 #ffffff, 0 0 #ffffff, 0 25px 50px 0px rgba(153, 151, 151, 0.267);
+  color: white;
+}
 
-  /* Dialog section */ 
-  dialog {
-    background-color: rgba(29, 29, 29, 0.97);
-    box-shadow: 0 0 #ffffff, 0 0 #ffffff, 0 25px 50px 0px rgba(153, 151, 151, 0.267);
-    color: white;
-  }
+body.dark input[type="text"]{
+  color:white;
+  background-color: rgb(50, 50, 50);
+}
 
-  input[type="text"]{
-    color:white;
-    background-color: rgb(50, 50, 50);
-  }
-
-  input[type="password"]{
-    color:white;
-    background-color: rgb(50, 50, 50);
-  }
+body.dark input[type="password"]{
+  color:white;
+  background-color: rgb(50, 50, 50);
 }

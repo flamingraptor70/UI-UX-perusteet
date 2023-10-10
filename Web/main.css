@@ -1,14 +1,13 @@
 /* Overall */
 :root {
+  --ratio: 3.74;
+  --leading: 0.025em;
+  --light-purple-color: #bcbdd8;
+  --dark-purple-color: #49176d;
   --clr-light: whitesmoke;
   --clr-dark: rgb(29, 29, 29);
   --clr-dark-items: rgb(22, 22, 22);
   --cta-color: #1b1c2f;
-  --light-purple-color: #bcbdd8;
-  --dark-purple-color: #49176d;
-  --darker-purple-color: #27063b ;
-  --ratio: 3.74;
-  --leading: 0.025em;
 }
 
 @font-face {
